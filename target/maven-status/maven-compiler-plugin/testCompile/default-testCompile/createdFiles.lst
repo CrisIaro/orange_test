@@ -1,0 +1,9 @@
+MyRunner/TestRunner.class
+Pages/HomePage.class
+Pages/Telefoane.class
+TestCases/TC_HomePage.class
+common/TestBase.class
+TestCases/TC_Magazin.class
+Utils/Utils.class
+Pages/Magazin.class
+TestCases/TC_AddPhone.class
