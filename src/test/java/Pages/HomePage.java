@@ -23,7 +23,6 @@ public class HomePage {
     public static By ClickInternetTv = By.id("love");
     public static By ClickOrangeMoney = By.id("money");
     public static By ClickHelp = By.id("help");
-
     public static By ClickXbtn = By.xpath("/html/body/div[3]/div/div/button");
     public static By ClickCart = By.id("Layer_1");
     public static By ClickMyAccount = By.xpath("//a[@href='https://www.orange.ro/myaccount/']");

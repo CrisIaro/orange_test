@@ -12,6 +12,24 @@ import org.testng.annotations.Test;
 
 public class TC_HomePage extends TestBase {
 
+    public void TestSetUp(String Descriere) {
+        test = extent.createTest("Homepage", "Homepage buttons test")
+                .assignCategory("Functional_testcase")
+                .assignAuthor("Cristina Iarosevici");
+        logger.info("Verify URL");
+
+        openURL(properties.getProperty("URL"));
+        test.log(Status.INFO, "Open URL");
+        logger.info("Open URL");
+
+        if (driver.findElements(HomePage.AcceptCookie).size()==1) {
+            Utils.waitForElementVisible(HomePage.AcceptCookie);
+            Utils.clickOnButton(HomePage.AcceptCookie);
+            test.log(Status.INFO, "Accept cookies");
+            logger.info("Accept cookies");
+        }
+    }
+
     @Test(priority = 0)
 
     public void navigateToPersonal() throws InterruptedException {
@@ -70,12 +88,6 @@ public class TC_HomePage extends TestBase {
     public void navigateToCautaMagazin() throws InterruptedException {
         TestSetUp("Navigate to Cauta Magazin");
 
-
-
-//        Utils.clickOnButton(HomePage.ClickBackOrangeIcon);
-//        test.log(Status.INFO,"Click Orange Icon to get to homepage");
-//        logger.info("Click Orange Icon to get to homepage");
-
         Utils.clickOnButton(HomePage.ClickMagazin);
         test.log(Status.INFO, "Click Magazin Button");
         logger.info("Click Magazin Button");
@@ -86,32 +98,10 @@ public class TC_HomePage extends TestBase {
         Assert.assertEquals(driver.getCurrentUrl(),"https://www.orange.ro/oferte-speciale/" );
     }
 
-    private void TestSetUp(String Descriere) {
-        test = extent.createTest("Homepage", Descriere)
-                .assignCategory("Functional_testcase")
-                .assignAuthor("Cristina Iarosevici");
-        logger.info("Verify URL");
-
-        openURL(properties.getProperty("URL"));
-        test.log(Status.INFO, "Open URL");
-        logger.info("Open URL");
-
-        if (driver.findElements(HomePage.AcceptCookie).size()==1) {
-            Utils.waitForElementVisible(HomePage.AcceptCookie);
-            Utils.clickOnButton(HomePage.AcceptCookie);
-            test.log(Status.INFO, "Accept cookies");
-            logger.info("Accept cookies");
-        }
-    }
-
-    @Test(priority = 99)
+    @Test(priority = 2)
     public void navigateToEverythingElse() throws InterruptedException {
         TestSetUp("Navigate to Cauta Magazin");
 
-
-//        Utils.clickOnButton(HomePage.ClickBackOrangeIcon);
-//        test.log(Status.INFO,"Click Orange Icon to get to homepage");
-//        logger.info("Click Orange Icon to get to homepage");
 
         Utils.clickOnButton(HomePage.ClickMagazin);
         test.log(Status.INFO, "Click Magazin Button");

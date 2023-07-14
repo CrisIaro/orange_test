@@ -19,6 +19,13 @@ public  class Utils extends TestBase {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
+
+    public static void waitForElementValue(By locator, String expectedValue) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        wait.until(ExpectedConditions.textToBe(locator, expectedValue));
+    }
+
     public static void clickOnButton(By locator) {
         WebElement element = driver.findElement(locator);
         element.click();
@@ -27,6 +34,14 @@ public  class Utils extends TestBase {
     public static boolean checkIfExists(By locator) {
         try{
             return driver.findElement(locator).isDisplayed();
+        } catch (Exception e){
+            return false;
+        }
+    }
+
+    public static boolean checkIfItsClicked(By locator) {
+        try{
+            return driver.findElement(locator).isSelected();
         } catch (Exception e){
             return false;
         }
@@ -78,7 +93,7 @@ public  class Utils extends TestBase {
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
-    public static void clickElementInList(By locator, Integer i) {
+        public static void clickElementInList(By locator, Integer i) {
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -96,11 +111,11 @@ public  class Utils extends TestBase {
 
     }
 
-    public static void waitForUrlToBe (String URL){
+        public static void waitForUrlToBe (String URL){
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.urlMatches(URL));
-
     }
+
     }
 

@@ -1,22 +1,18 @@
 package TestCases;
 
-import Pages.HomePage;
 import Pages.Magazin;
 import Utils.Utils;
 import com.aventstack.extentreports.Status;
 import common.TestBase;
-import io.cucumber.java.it.Ma;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TC_Magazin extends TestBase {
+public class TC_AbonFaraTel extends TestBase {
 
     @Test()
 
     public void magazin() throws InterruptedException {
-        test = extent.createTest("Test Magazin", "Case 2: Test magazin")
+        test = extent.createTest("Abonamente", "Case 2: Selecting and adding phone subscription to cart")
                 .assignCategory("Functional_testcase")
                 .assignAuthor("Cristina Iarosevici");
         logger.info("Verify URL");
