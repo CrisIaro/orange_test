@@ -1,7 +1,11 @@
-MyRunner/TestRunner.class
-Pages/HomePage.class
+TestCase/Accesorii_Test.class
+TestCase/SearchPhone_Test.class
 Pages/Telefoane.class
-TestCases/TC_HomePage.class
+TestCase/Login_Test.class
+TestCase/HomePage_Test.class
+TestCase/Cart_Test.class
+TestCase/AbonFaraTelTest.class
+Pages/HomePage.class
 common/TestBase.class
 Utils/Utils.class
 Pages/Magazin.class

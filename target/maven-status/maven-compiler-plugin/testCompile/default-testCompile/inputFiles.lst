@@ -1,11 +1,15 @@
 /Users/cris/Desktop/testare automata/OrangeProject/src/test/java/Utils/Utils.java
+/Users/cris/Desktop/testare automata/OrangeProject/src/test/java/API/Category.java
 /Users/cris/Desktop/testare automata/OrangeProject/src/test/java/Pages/Cart.java
 /Users/cris/Desktop/testare automata/OrangeProject/src/test/java/Pages/Telefoane.java
+/Users/cris/Desktop/testare automata/OrangeProject/src/test/java/API/Pet.java
 /Users/cris/Desktop/testare automata/OrangeProject/src/test/java/Pages/Magazin.java
-/Users/cris/Desktop/testare automata/OrangeProject/src/test/java/MyRunner/TestRunner.java
+/Users/cris/Desktop/testare automata/OrangeProject/src/test/java/API/Main.java
+/Users/cris/Desktop/testare automata/OrangeProject/src/test/java/API/Tag.java
+/Users/cris/Desktop/testare automata/OrangeProject/src/test/java/API/APItest.java
+/Users/cris/Desktop/testare automata/OrangeProject/src/test/java/TestCases/AbonFaraTelTest.java
 /Users/cris/Desktop/testare automata/OrangeProject/src/test/java/Pages/HomePage.java
 /Users/cris/Desktop/testare automata/OrangeProject/src/test/java/TestCases/TC_HomePage.java
-/Users/cris/Desktop/testare automata/OrangeProject/src/test/java/TestCases/TC_AbonFaraTel.java
 /Users/cris/Desktop/testare automata/OrangeProject/src/test/java/TestCases/TC_Login.java
 /Users/cris/Desktop/testare automata/OrangeProject/src/test/java/TestCases/TC_Accesorii.java
 /Users/cris/Desktop/testare automata/OrangeProject/src/test/java/TestCases/TC_Cart.java
