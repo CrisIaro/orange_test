@@ -3,12 +3,8 @@
 <suite name="TestSuite">
     <test name="ChromeTest" enabled="true">
         <classes>
-            <class name="TestCases.TC_HomePage"/>
+            <class name="TestCase.HomePage_Test"/>
         </classes>
     </test>
-    <!--    <test name="FirefoxTests" enabled="false">-->
-    <!--        <classes>-->
-    <!--            <class name="testCases.Login_TC1"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+
 </suite>
